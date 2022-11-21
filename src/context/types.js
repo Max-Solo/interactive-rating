@@ -1,0 +1,2 @@
+export const RAITING_SUBMIT = 'RAITING_SUBMIT'
+export const RAITING_RESULT = 'RAITING_RESULT'

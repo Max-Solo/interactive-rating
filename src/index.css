@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+	background-color: hsl(216, 12%, 8%);
+	width: 100%;
+	height: 100vh;
+}
+
+.container {
+	max-width: 1440px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.raiting-wrapper {
+	background-color: hsl(213, 19%, 18%);
+	max-width: 340px;
+	padding: 35px;
+	border-radius: 30px;
+}
+
+.raiting-icon {
+	background-color: hsl(216, 12%, 25%);
+	padding: 1rem;
+	border-radius: 100%;
+	display: inline-flex;
+	align-items:center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.raiting-title {
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+	margin: 0 0 10px 0;
+}
+
+.raiting-description {
+	font-size: 15px;
+	color: hsl(216, 12%, 54%);
+	line-height: 1.5;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.raiting-grade {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	list-style: none;
+}
+.raiting-grade-item {
+	background-color: hsl(216, 12%, 25%);
+	padding: 0.8rem ;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	text-align: center;
+	color: hsl(216, 12%, 54%);
+	cursor: pointer;
+	font-size: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 1;
+}
+.raiting-grade-item input {
+	display: none;
+}
+
+.raiting-grade-item.effect {
+	box-shadow: 0 0 0 2px #fff;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.raiting-grade-item.effect:after {
+	top: -2px;
+	left: -2px;
+	padding: 2px;
+	z-index: -1;
+	background: #fff;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.3s;
+	transition: transform 0.2s, opacity 0.3s;
+}
+
+.raiting-grade-item.effect.sub-a, .raiting-grade-item.effect.sub-a li {
+	color: hsl(216, 12%, 54%);;
+}
+.raiting-grade-item.effect.sub-a:hover, .raiting-grade-item.effect.sub-a:hover li {
+	color: #fff;
+}
+.raiting-grade-item.effect.sub-a:hover:after {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+
+.raiting-grade-item.small {
+	font-size: 20px;
+	line-height:45px;
+	width:45px;
+	height:45px;
+	margin:7px;
+}
+.raiting-grade-item.mini {
+	font-size: 15px;
+	line-height:32px;
+	width:30px;
+	height:30px;
+	margin:7px;
+}
+.raiting-grade-item.auto-width {
+	width: auto;
+	height: auto;
+	padding: 15px;
+}
+.raiting-grade-item:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content:'';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.raiting-grade-item:before {
+	speak-as: none;
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+.active {
+	background: hsl(25, 97%, 53%);
+	transition: background 0.3s ease-in-out;
+	color: #fff;
+	animation: active 1.5s infinite;
+}
+
+.raiting-button {
+	background-color: hsl(25, 97%, 53%);
+	border: none;
+	width: 100%;
+	padding: 0.8rem 0;
+	cursor: pointer;
+	border-radius: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-weight: 400;
+	font-size: 16px;
+	color: hsl(0, 0%, 100%);
+	-webkit-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+.raiting-button:hover {
+	box-shadow: 0 0 2px 0 hsl(25, 97%, 53%) inset, 0 0 10px 4px hsl(25, 97%, 53%);
+	color:hsl(25, 97%, 53%);
+	background-color: hsl(0, 0%, 100%); 
+}
+
+.thank-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.thank-img {
+	text-align: center;
+	min-height: 40px;
+	margin-bottom: 30px;
+}
+
+.thank-img img{
+	object-fit: cover;
+	max-width: 100%;
+	
+}
+
+.thank-outcome {
+	background-color: hsl(216, 12%, 25%);
+	display: inline-block;
+	padding: 0.7rem 1rem 0.5rem;
+	border-radius: 50px;
+	margin-bottom: 30px;
+	color: hsl(25, 97%, 53%);
+}
+
+.thank-decription {
+	margin-bottom: 0;
+}
+
+@keyframes active {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 15px rgba(228, 25, 49, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
+	}
+}
