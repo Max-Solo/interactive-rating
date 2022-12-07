@@ -1,4 +1,6 @@
-# Mini project "Interactive-Rating":star:
+# Mini project "Interactive-Rating"✨
+
+A fully responsive version of the page that can be applied in any online store.
 
 The project was completed as part of the :link:[frontendmentor.io](https://www.frontendmentor.io/home) challenge
 
@@ -8,10 +10,12 @@ The mini-project was created using the **React**:rocket: library
 
 The basis was to take functional components and the following hooks:
 * useState
-* useReducer (I could do without it, but I decided to practice)
+* useEffect
+* useRef
+* useReducer
 * UseContext
 
-React-Spring:hotsprings: library was used for animation
+React-Spring💫 library was used for animation
 
 :alien:**Max-Solo**
 
